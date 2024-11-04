@@ -27,7 +27,7 @@ except Exception as e:
     print(e)
     
 
-
+####        get the transcript          #####  
 r = sr.Recognizer()
 with sr.AudioFile(get_path(output_file_name + '.' + expected_format)) as source:
     audio = r.record(source)
